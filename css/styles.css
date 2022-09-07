@@ -1,0 +1,390 @@
+/* CSS переменные */
+    :root {
+        --primary-text-color: #757575;
+        --main-text-color: #212121;
+        --sec-title: #212121;
+        --link-color: #2196F3;
+        --bg-color-button: #2196F3;
+
+        --border-radius: 4px;
+    }
+
+/* Общий стиль */
+    body {
+        color: var(--primary-text-color);
+
+        background-color: #FFFFFF;
+
+        font-family: Roboto, sans-serif;
+
+        letter-spacing: 0.03em;
+        }
+    
+    h1,h2, h3, h4, h5, h6, p {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+    li { list-style: none; }
+
+    a { 
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    img {
+        display: block;
+    }
+
+    .conteiner {
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+
+/* Логотип */
+    .logo-one {
+        color: #2196F3;
+    }
+
+    .logo-head-two {
+        color: #000000;
+    }
+
+    .logo-footer-two {
+        color: #FFFFFF;
+    }
+
+    .logo-one,
+    .logo-head-two,
+    .logo-footer-two {
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+/* Навигация */
+
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+    .main-helmet {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .main-helmet, .helmet, .header-nav, .header-contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-nav {
+        margin-left: 93px;
+    }
+
+    .header-nav li:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .header-nav a {
+        color: #212121;
+    }
+
+    .header-contacts {
+        margin-left: auto;
+        }
+
+    .header-contacts a {
+        color: #757575;
+    }
+
+    .header-contacts a + a {
+        margin-left: 50px;
+    }
+
+    .header-nav a:hover,
+    .header-nav a:focus {
+        color: var(--link-color);
+    }
+
+    .header-contacts a:hover,
+    .header-contacts a:focus {
+        color: var(--link-color);
+    }
+
+    .header-nav a,
+    .header-contacts a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+    .header-nav .active-link {
+        color: var(--link-color);
+    }
+
+/* Главный блок */
+    .hero {
+        background-color: #2F303A;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    .hero h1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        color: #FFFFFF;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    .wadding {
+        padding: 94px 0;
+    }
+
+    .rulon {
+        width: calc((100% - 3*30px) / 4);
+        margin-right: 30px;
+    }
+
+    .rulon:last-child {
+            margin-right: 0;
+    }
+
+    .hidden {
+        font-size: 0;
+    }
+
+    .conteiner .catalog {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title {
+        margin-bottom: 10px;
+
+        color: var(--main-text-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+    }
+
+    .list-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    .bussines {
+        padding-bottom: 94px;
+    }
+
+    .sec-title {
+        margin-bottom: 50px;
+
+        color: var(--sec-title);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.66;
+        text-align: center;
+    }
+
+    .pic {
+        margin-bottom: 30px;
+    }
+
+    .our-team {
+        background-color: #F5F4FA;
+        padding: 94px 0;
+    }
+
+    .our-team li {
+        padding-bottom: 30px;
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                    0px 1px 1px rgba(0, 0, 0, 0.14),
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .our-team p {
+        text-align: center;
+    }
+
+    .section .title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .section p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .conteiner h1 {
+        font-size: 0;
+    }
+
+    .work-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .work-list li {
+        width: calc((100% - 2*30px) / 3);
+        margin: 0 30px 30px 0;
+
+        border: 1px solid rgba(238, 238, 238, 1);
+    }
+
+    .work-list li:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .work-list li:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+
+    .work-list h2 {
+        margin-bottom: 4px;
+
+        color: var(--main-text-color);
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    }
+
+    .work-list div {
+        padding: 20px 24px;
+    }
+
+    .work-list p {
+        color: var(--primary-text-color);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+    }
+
+/* Подвал */
+    .footer {
+        background-color: #2F303A;
+        padding: 60px 0;
+    }
+
+    .conteiner address {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    address a + a {
+        margin-top: 9px;
+    }
+
+    .footer-adress {
+        color: #FFFFFF;
+    }
+
+    .footer-contact {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer-contact:hover,
+    .footer-contact:focus {
+        color: var(--link-color);
+    }
+
+    .footer-adress,
+    .footer-contact {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+ /* Button */
+    .hero-button {
+        color: #FFFFFF;
+        background-color: var(--bg-color-button);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        border: none;
+        border-radius: var(--border-radius);
+        padding: 10px 32px;
+        margin: 0 auto;
+
+        cursor: pointer;
+    }
+
+    .but-main {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .but-main li + li {
+        margin-left: 8px;
+    }
+
+    .port-button {
+        color: var(--main-text-color);
+        background-color: #F5F4FA;
+        border-color: transparent;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+
+        border-radius: var(--border-radius);
+        padding: 6px 22px;
+
+        cursor: pointer;
+    }
+
+    .port-button.all {
+        padding: 6px 25px;
+    }
+
+    .port-button:hover,
+    .port-button:focus {
+        color: #FFFFFF;
+        background-color: var(--bg-color-button);
+        border-color: var(--bg-color-button);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                    0px 1px 2px rgba(0, 0, 0, 0.08), 
+                    0px 2px 2px rgba(0, 0, 0, 0.12);;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+    }
